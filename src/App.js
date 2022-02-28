@@ -1,10 +1,23 @@
-import { Button } from 'antd';
-
+import { Button } from "antd";
+import { Fragment } from "react";
+import "./App.less";
+import vform from "./assets/vform.png";
+import FormWidget from "./components/formWidget";
+import Widgetpanel from "./components/widgetPanel";
 function App() {
   return (
-    <div >
-       <header className='mainHeader'>Button</header>
-    </div>
+    <Fragment>
+      <header className="mainHeader">
+        <div>
+          <img src={vform} alt="logo" />
+          <span> React表单设计器</span>
+        </div>
+      </header>
+      <div className="mainContainer">
+        <Widgetpanel />
+        <FormWidget/>
+      </div>
+    </Fragment>
   );
 }
 

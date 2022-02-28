@@ -1,0 +1,38 @@
+.formWidgetHeader {
+  font-size: 14px;
+  border-bottom: 1px dotted #ccc;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  a {
+    display: inline-block;
+    // height: 14px;
+    line-height: 14px;
+    margin-left: 25px;
+  }
+}
+.formWidgetMain {
+  min-width: 680px;
+  border-right: 2px dotted #ebeef5;
+  .formWidgetContainer {
+    padding: 10px;
+    background: #f1f2f3;
+    height:calc(100% - 47px) ;
+    position: relative;
+    .formWidgetContext {
+      padding: 5px;
+      background: white;
+      height: 100%;
+      overflow: auto;
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      // font-size: 18px;
+      // color: #999;
+      .ant-form-item{
+        margin-bottom: 0px;
+        padding-bottom: 24px;
+      }
+    }
+  }
+}
